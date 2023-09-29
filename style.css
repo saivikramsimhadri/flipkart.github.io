@@ -1,0 +1,215 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.nav-bar {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  background-color: rgb(0, 123, 255);
+  padding: 10px 0 10px 0;
+  width: 100%;
+  z-index: 10;
+}
+.name {
+  background-color: rgb(0, 123, 255);
+  color: white;
+  border: 0;
+  font-size: large;
+  cursor: pointer;
+}
+#search-input {
+  width: 300px;
+  padding: 8px;
+  margin-left: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+#search-button {
+  padding: 8px;
+  /* font-size: 16px; */
+  background-color: white;
+  color: rgb(0, 123, 255);
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+.login {
+  background-color: white;
+  color: rgb(0, 123, 255);
+  padding: 5pxpx;
+  margin-left: 20px;
+  width: 125px;
+  font-size: large;
+  border: none;
+}
+.headings {
+  background-color: rgb(0, 123, 255);
+  color: white;
+  border: 0;
+  font-size: large;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/* .dropdown {
+  position: relative;
+  display: inline-block;
+} */
+
+.dropbtn {
+  padding: 8px;
+  font-size: 16px;
+  background-color: rgb(0, 123, 255);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.foot {
+  padding: 8px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.main {
+  display: flex;
+
+  background-color: #ddddddf1;
+
+  padding-top: 50px;
+}
+
+.left-panel {
+  flex: 20%;
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
+}
+.right-panel {
+  flex: 80%;
+  background-color: white;
+  margin: 10px 0 10px 0;
+}
+/* .right-sub {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5px;
+} */
+.right-sub {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+}
+.product {
+  display: grid;
+  /* flex: 0 0 20%;  */
+  /* Set the width of each item */
+  /* justify-content: center; */
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  bottom: 0;
+}
+.product:hover {
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  bottom: 15px;
+}
+.like {
+  position: absolute;
+
+  top: 5px;
+  right: 5px;
+
+  color: grey;
+  opacity: 1;
+}
+.del {
+  position: absolute;
+
+  top: 5px;
+  left: 5px;
+
+  color: grey;
+  opacity: 1;
+}
+/* .like:hover {
+  opacity: 1;
+  color: red;
+} */
+.like-button {
+  /* font-size: 24px; */
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+.del-button {
+  /* font-size: 24px; */
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.like-button-red {
+  color: red;
+}
+.del-button-red {
+  color: red;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s;
+  display: none;
+}
+
+#scrollToTopBtn.visible {
+  opacity: 1;
+}

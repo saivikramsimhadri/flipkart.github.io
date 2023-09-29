@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./like.js"></script>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <button class="name"><strong>Flipkart</strong></button>
+      <input type="text" id="search-input" placeholder="Search products..." />
+      <button id="search-button" type="submit">
+        <i class="fa fa-search"></i>
+      </button>
+      <button class="login"><strong>Login</strong></button>
+      <button class="headings"><strong>Become a seller</strong></button>
+      <div class="dropdown">
+        <button class="dropbtn"><strong>More</strong></button>
+        <div class="dropdown-content">
+          <a href="page1.html">Option 1</a>
+          <a href="page2.html">Option 2</a>
+          <a href="page3.html">Option 3</a>
+          <a href="page4.html">Option 4</a>
+        </div>
+      </div>
+      <button class="headings">
+        <i class="fa fa-shopping-cart"><strong> Cart</strong></i>
+      </button>
+    </div>
+
+    <div class="main">
+      <div class="left-panel">
+        <h1>Filters</h1>
+
+        <div class="dropdown">
+          <h2>Categories</h2>
+          <button class="foot"><strong>Footwear</strong></button>
+          <div class="dropdown-content">
+            <a href="page1.html">Women's footwear</a>
+            <a href="page2.html">kids & Infants Footwear</a>
+            <a href="page3.html">Men's Footwear</a>
+          </div>
+        </div>
+      </div>
+      <div class="right-panel">
+        <h2>showing 1- 40 results</h2>
+        <div class="right-sub">
+          <div id="ert" class="product">
+            <div class="like">
+              <i
+                onclick="toggleLike(event,'ert')"
+                id="like-button"
+                class="fa fa-heart like-button"
+              ></i>
+            </div>
+            <div class="del">
+              <i
+                onclick="removeDiv(event,'ert')"
+                id="del-button"
+                class="fa fa-window-close del-button"
+              ></i>
+            </div>
+
+            <img src="download.jpeg" alt="shoe image" class="product-img" />
+            <h3 class="product-name">Nike Air force</h3>
+            <p>1300 $</p>
+          </div>
+          <div id="the" class="product">
+            <div class="like">
+              <i
+                onclick="toggleLike(event,'the')"
+                id="like-button"
+                class="fa fa-heart like-button"
+              ></i>
+            </div>
+            <img src="download.jpeg" alt="shoe image" class="product-img" />
+
+            <h3 class="product-name">Nike Air force</h3>
+            <p>1300 $</p>
+          </div>
+          <div class="product">
+            <div class="like">
+              <i
+                onclick="toggleLike(event,'abc')"
+                id="like-button"
+                class="fa fa-heart like-button"
+              ></i>
+            </div>
+            <img src="download.jpeg" alt="shoe image" class="product-img" />
+            <h3 class="product-name">Nike Air force</h3>
+            <p>1300 $</p>
+          </div>
+          <div class="product">
+            <img src="download.jpeg" alt="shoe image" class="product-img" />
+            <h3 class="product-name">Nike Air force</h3>
+            <p>1300 $</p>
+          </div>
+          <div class="product">
+            <img src="download.jpeg" alt="shoe image" class="product-img" />
+            <h3 class="product-name">Nike Air force</h3>
+            <p>1300 $</p>
+          </div>
+          <div class="product">
+            <img src="download.jpeg" alt="shoe image" class="product-img" />
+            <h3 class="product-name">Nike Air force</h3>
+            <p>1300 $</p>
+          </div>
+          <div class="product">
+            <img src="download.jpeg" alt="shoe image" class="product-img" />
+            <h3 class="product-name">Nike Air force</h3>
+            <p>1300 $</p>
+          </div>
+          <div class="product">
+            <img src="download.jpeg" alt="shoe image" class="product-img" />
+            <h3 class="product-name">Nike Air force</h3>
+            <p>1300 $</p>
+          </div>
+          <div class="product">
+            <img src="download.jpeg" alt="shoe image" class="product-img" />
+            <h3 class="product-name">Nike Air force</h3>
+            <p>1300 $</p>
+          </div>
+          <div class="product">
+            <img src="download.jpeg" alt="shoe image" class="product-img" />
+            <h3 class="product-name">Nike Air force</h3>
+            <p>1300 $</p>
+          </div>
+          <div class="product">
+            <img src="download.jpeg" alt="shoe image" class="product-img" />
+            <h3 class="product-name">Nike Air force</h3>
+            <p>1300 $</p>
+          </div>
+          <div class="product">
+            <img src="download.jpeg" alt="shoe image" class="product-img" />
+            <h3 class="product-name">Nike Air force</h3>
+            <p>1300 $</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button onclick="scrollToTop()" id="scrollToTopBtn" class="hidden">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="./button.js"></script>
+  </body>
+</html>
